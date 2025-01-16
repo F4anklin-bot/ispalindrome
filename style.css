@@ -31,6 +31,7 @@ body{
     padding: 20px;
     margin: 10px 0;
     background-color: #00406C;
+    box-shadow: 2px 5px 6px #310055;
 }
 label{
     color: white;
