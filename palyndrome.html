@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Est-ce un palindrome ?</h1>
+        <div class="card">
+            <label for="text-input">Entrer un texte pour voir si c'est un palindrome</label>
+            <input type="text" id="text-input">
+            <button id="check-btn">Vérifier</button>
+            <p id="result"></p>
+        </div>
+    </main>
+    <script>
+        const bouton = document.getElementById("check-btn");
+        const text = document.getElementById("text-input");
+        let resultat = document.getElementById("result");
+
+        bouton.addEventListener('click', function() {
+            // la valeur qui sera vérifiée
+            let mot = "";
+            const input = text.value.trim(); // Pour supprimer les espaces inutiles
+            for (let i of input) {
+                if (/[a-zA-Z]/.test(i)) {
+                    mot += i.toLowerCase(); // Correction: Ajouter les parenthèses pour exécuter toLowerCase
+                }
+            }
+            const reversedmot = mot.split('').reverse().join('');
+            if (input === "") {
+                return; // Si le champ est vide, rien ne se passe
+            } else {
+                if (mot === reversedmot) {
+                    resultat.innerHTML = input + " est un palindrome";
+                } else {
+                    resultat.innerHTML = input + " n'est pas un palindrome";
+                }
+            }
+        })
+    </script>
+</body>
+</html>

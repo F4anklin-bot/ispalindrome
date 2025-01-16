@@ -1,0 +1,52 @@
+body{
+    background-color: #001A2C ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column
+}
+.title{
+    text-align: center;
+    transition: 1.2s;
+}
+.title:hover{
+    transform: scale(1.2);
+    border-bottom: solid #3C0663;
+}
+.card{
+    width: min(100vw, 450px);
+    min-height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #00406C;
+}
+#text-input{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #5a01a7;
+    background-color: transparent;
+}
+#check-btn{
+    width: 90px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #5a01a7;
+    color: black;
+    cursor: pointer;
+}
