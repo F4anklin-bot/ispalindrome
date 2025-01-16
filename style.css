@@ -14,6 +14,7 @@ body{
 .title{
     text-align: center;
     transition: 1.2s;
+    color: white;
 }
 .title:hover{
     transform: scale(1.2);
@@ -31,6 +32,9 @@ body{
     margin: 10px 0;
     background-color: #00406C;
 }
+label{
+    color: white;
+}
 #text-input{
     height: 30px;
     width: 250px;
@@ -47,6 +51,6 @@ body{
     padding: 10px;
     border-radius: 15px;
     background-color: #5a01a7;
-    color: black;
+    color: white;
     cursor: pointer;
 }
