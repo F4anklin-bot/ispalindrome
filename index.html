@@ -12,7 +12,7 @@
         <div class="card">
             <label for="text-input">Entrer un texte pour voir si c'est un palindrome</label>
             <input type="text" id="text-input">
-            <button id="check-btn">Vérifier</button>
+            <button id="check-btn" onmousedown="f()" onmouseup="g()">Vérifier</button>
             <p id="result"></p>
         </div>
     </main>
@@ -20,7 +20,12 @@
         const bouton = document.getElementById("check-btn");
         const text = document.getElementById("text-input");
         let resultat = document.getElementById("result");
-
+        function f(){
+            document.getElementById("check-btn").style.backgroundColor= "#310055";
+        }
+        function g(){
+            document.getElementById("check-btn").style.backgroundColor= "#5a01a7";
+        }
         bouton.addEventListener('click', function() {
             // la valeur qui sera vérifiée
             let mot = "";
