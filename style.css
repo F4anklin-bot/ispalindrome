@@ -54,4 +54,5 @@ label{
     background-color: #5a01a7;
     color: white;
     cursor: pointer;
+    transition: 2ms;
 }
